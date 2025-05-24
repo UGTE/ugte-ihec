@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ambiance – UGTE IHEC</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url(bggg.jpeg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: white;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+      border-radius: 12px;
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00ccff;
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s;
+      border: 2px solid #00ccff;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .lightbox {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
+
+    a.back-home {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+      color: #00ccff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a.back-home:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Ambiance Étudiante</h1>
+
+    <div class="gallery">
+      <a href="#img1"><img src="WhatsApp Image 2025-05-24 at 11.52.59 AM.jpeg" alt="Ambiance 1"></a>
+      <a href="#img2"><img src="WhatsApp Image 2025-05-24 at 11.57.48 AM.jpeg" alt="Ambiance 2"></a>
+      <a href="#img3"><img src="WhatsApp Image 2025-05-24 at 11.52.59 AM.jpeg" alt="Ambiance 3"></a>
+    </div>
+
+    <!-- Lightbox sections -->
+    <div id="img1" class="lightbox" onclick="location.href='#'">
+      <img src="WhatsApp Image 2025-05-24 at 11.59.15 AM.jpeg" alt="Ambiance 1">
+    </div>
+    <div id="img2" class="lightbox" onclick="location.href='#'">
+      <img src="WhatsApp Image 2025-05-24 at 11.57.48 AM.jpeg" alt="Ambiance 2">
+    </div>
+    <div id="img3" class="lightbox" onclick="location.href='#'">
+      <img src="WhatsApp Image 2025-05-24 at 11.52.59 AM.jpeg" alt="Ambiance 3">
+    </div>
+
+    <a class="back-home" href="ugte.html">← Retour à l'accueil</a>
+  </div>
+</body>
+</html>

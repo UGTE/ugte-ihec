@@ -1,0 +1,178 @@
+<!DOCTYPE >
+<html lang="en">
+<head>
+  <title>UGTE - IHEC Carthage</title>
+  <meta charset="utf-8">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">
+ <style>  
+  body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+    .slider {
+  width: 50%;
+  max-width: 40;
+  margin: 40px auto 0;
+  overflow: hidden;
+  border-radius: 50px;
+  box-shadow: 50 20px 15px rgba(0,0,0,0.2);
+}
+.slider {
+  width: 10vw;
+  max-width: 50%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 400%; /* 4 صور */
+  animation: slide 16s infinite;
+}
+
+.slides img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0%    { transform: translateX(0%); }
+  20%   { transform: translateX(0%); }
+  25%   { transform: translateX(-100%); }
+  45%   { transform: translateX(-100%); }
+  50%   { transform: translateX(-200%); }
+  70%   { transform: translateX(-200%); }
+  75%   { transform: translateX(-300%); }
+  95%   { transform: translateX(-300%); }
+  100%  { transform: translateX(0%); }
+}
+      h1 {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px 60px;
+      border-radius: 12px;
+      font-size: 3em;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 40px auto;
+      flex-wrap: wrap;
+    }
+    .nav-links a img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .nav-links a img:hover {
+      transform: scale(1.05);
+    }
+        .section {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            margin: 20px ;
+            max-width: 800px;
+            border-radius: 10px;
+        }
+        .hidden-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Quand on scrolle ou clique, elle devient visible */
+.hidden-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+        section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+     .socials {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .socials a {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 24px;
+      color: #00ccff;
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+
+    .socials a:hover {
+      transform: scale(1.2);
+      color: #ffffff;
+    }
+
+    .socials img {
+      width: 30px;
+      vertical-align: middle;
+    }
+      footer {
+      text-align: center;
+      color: #ccc;
+      font-size: 14px;
+      margin-top: 50px;
+      background-color: black;
+    }
+        </style>
+
+ <body style="background-image: url(bggg.jpeg); background-size: auto; background-repeat: no-repeat; background-position: center;">
+   
+
+    <div class="Image-container">
+
+    <img class="rounded float-left" src="images.jpg" alt="UGTE"  style="width:8%;" class="logo logo-gauche">
+  <a href="https://www.ihec.rnu.tn/" target="_blank">
+  <img src="images (1).jpg" alt="IHEC" class="rounded float-right" style="width:8%;">
+  </a>
+  <section class="main-slider wow slideInLeft" data-wow-duration="2s" data-wow-delay="0s">
+  
+</section>
+
+   
+</div>
+<h1 style="color: orange;" class="">Bienvenue à l'UGTE - IHEC Carthage</h1>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<br>
+<br>
+ <!-- IMAGE LINKS -->
+  <div class="nav-links">
+    <a href="apropos.html"><img src="aprp.jpeg" alt="À propos de nous"></a>
+    <a href="doc.html"><img src="doc (1).jpeg" alt="Documents pour les étudiants"></a>
+    <a href="amb.html"><img src="amb.jpeg" alt="Notre ambiance"></a>
+  </div>
+
+<br>
+  <div class="socials">
+      <a href="https://www.facebook.com/share/15T9erji3s/?mibextid=wwXIfr" target="_blank" title="Facebook">
+        <img src="facebook_logo_icon_257007.webp" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/ugte_ihec_carthage?igsh=dmtjNWU2cTB3aXVz" target="_blank" title="Instagram">
+        <img src="instagram_logo_icon_257003.webp" alt="Instagram">
+      </a>
+      <a href="https://www.tiktok.com/@tonpage" target="_blank" title="TikTok">
+        <img src="tiktok-icon-black.svg" alt="TikTok">
+      </a>
+    </div>
+<br>
+ <footer>
+      © 2025 UGTE – IHECC ©
+    </footer>
+
+</body>
+</html>
